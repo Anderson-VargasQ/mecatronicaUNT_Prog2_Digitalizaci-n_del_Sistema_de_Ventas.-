@@ -1,0 +1,61 @@
+
+<%- include('header') -%>
+    
+
+<form action="/nuevop" method="POST">
+    <img src="img/brand.png" width="150" height="150" >
+    <div >
+        <h1>Bienvenido</h1>
+        <h3>Ingrese Producto</h3>
+        <div>
+            <div>
+                <label for="_id">ID</label>
+                <input type="text"name="_id">
+            </div>
+            <div>
+                <label for="categoria">CATEGORIA</label>
+                <input type="text"name="categoria">
+            </div>
+            <div>
+              <label for="name">nombre</label>
+              <input type="text"  name="name">
+            </div>
+            <div>
+                <label for="precio_costo">Precio de costo</label>
+                <input type="number" name="precio_costo">
+            </div>
+            <div>
+                <label for="precio_venta">Precio de venta</label>
+                <input type="number" name="precio_venta">
+            </div>
+            <div>
+                <label for="utilidad">Utilidad</label>
+                <input type="number" name="utilidad">
+            </div>
+            <div>
+              <label for="stock">Stock</label>
+              <input type="number" name="stock">
+            </div>
+            <div>
+             <label for="reserva">Reserva</label>
+             <input type="number" name="reserva">
+            </div>
+            <div>
+              <label for="stock_disp">Stock disponible</label>
+              <input type="number" name="stock_disp">
+            </div>
+          </div>
+          <button type="submit" class="btn">Registrar</button>
+       
+ 
+
+</form>
+      
+<!--<input type="text" name="nombre" placeholder="Nombres"> 
+<input type="text" name="apellido" placeholder="Apellidos"> 
+<input type="number" name="edad" placeholder="Edad"> 
+<input type="number" name="dni" placeholder="DNI"> 
+<input type="tel" name="celular" placeholder="Número de celular"> 
+<input type="email" name="email" placeholder="Correo electrónico">
+<button type="submit"> Enviar </button>    
+

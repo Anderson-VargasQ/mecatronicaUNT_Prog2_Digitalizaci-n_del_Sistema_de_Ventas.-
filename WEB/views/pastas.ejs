@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- FUENTE - FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- CSS PERSONALIZADO-->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="nav-main">
+      <!-- Brand -->
+      <img src="img/brand.png" alt="Logo" class="nav-brand">
+      
+      <!-- Left Nav -->
+      <ul class="nav-menu">
+        <li>
+          <a href="/">INICIO</a>
+        </li>
+        <li>
+          <a href="/contactanos">CONTÁCTANOS</a>
+        </li>
+        <li>
+          <a href="/anuevos_prods">NUEVOS PRODUCTOS</a>
+        </li>
+        <li>
+          <a href="/aboutus">SOBRE NOSOTROS</a>
+        </li>
+      </ul>
+
+      
+    </nav>
+    <hr>
+
+    <!-- NEWS CARDS -->
+    <div class="news-cards">
+      <div>
+        <img src="img/don victorio gueso.png" alt="" />
+        <h3>DON VICTORIO GRUESO</h3>
+        <p>
+          Descripción: PASTA DE TRIGOS SELECTOS
+        </p>
+        <p>
+          Disponibilidad: <!-- AQUÍ ESPECIFICAR CUÁNTAS UNIDADES DE ESTE ITEM ESTÁN DISPONIBLES -->
+          <% pr.forEach(asd=>{ %>
+            <%if(asd._id == "PM20A"){%>
+            <p>
+              <%= asd.stock_disp %>
+            </p>
+          <% }})%>
+          
+        </p>
+        <p>
+          Precio: <!-- PRECIO DISPONIBLE -->
+          
+          <% pr.forEach(asd=>{ %>
+            <%if(asd._id == "PM20A"){%>
+            <p>
+              S/. <%= asd.precio_venta%>
+            </p>
+          <% }})%>
+        </p>
+
+      </div>
+      <div>
+        <img src="img/spaguetti.png" alt="" />
+        <h3>DON VICTORIO SPAGUETTI</h3>
+        <p>
+          Descripción: PASTA DE TRIGOS SELECTOS
+        </p>
+        <p>
+          Disponibilidad: <!-- AQUÍ ESPECIFICAR CUÁNTAS UNIDADES DE ESTE ITEM ESTÁN DISPONIBLES -->
+          <% pr.forEach(asd=>{ %>
+            <%if(asd._id == "PM20B"){%>
+            <p>
+              <%= asd.stock_disp %>
+            </p>
+          <% }})%>
+        </p>
+        <p>
+          Precio: <!-- PRECIO DISPONIBLE -->
+          <% pr.forEach(asd=>{ %>
+            <%if(asd._id == "PM20B"){%>
+            <p>
+              S/. <%= asd.precio_venta%>
+            </p>
+          <% }})%>
+        </p>
+
+      </div>
+      <div>
+        <img src="img/linguini.png" alt="" />
+        <h3>DON VICTORIO LINGUINI</h3>
+        <p>
+          Descripción: PASTA DE TRIGOS SELECTOS
+        </p>
+        <p>
+          Disponibilidad: <!-- AQUÍ ESPECIFICAR CUÁNTAS UNIDADES DE ESTE ITEM ESTÁN DISPONIBLES -->
+          <% pr.forEach(asd=>{ %>
+            <%if(asd._id == "PM20C"){%>
+            <p>
+              <%= asd.stock_disp %>
+            </p>
+          <% }})%>
+        </p>
+        <p>
+          Precio: <!-- PRECIO DISPONIBLE -->
+          <% pr.forEach(asd=>{ %>
+            <%if(asd._id == "PM20C"){%>
+            <p>
+              S/. <%= asd.precio_venta%>
+            </p>
+          <% }})%>
+        </p>
+
+      </div>
+      <div>
+        <img src="img/nicolini.png" alt="" />
+        <h3>NICOLINI</h3>
+        <p>
+          Descripción: AUTENTICA TRADICIÓN
+          </p>
+          Disponibilidad: <!-- AQUÍ ESPECIFICAR CUÁNTAS UNIDADES DE ESTE ITEM ESTÁN DISPONIBLES -->
+          <% pr.forEach(asd=>{ %>
+            <%if(asd._id == "PM20D"){%>
+            <p>
+              <%= asd.stock_disp %>
+            </p>
+          <% }})%>
+        </p>
+        <p>
+          Precio: <!-- PRECIO DISPONIBLE -->
+          <% pr.forEach(asd=>{ %>
+            <%if(asd._id == "PM20D"){%>
+            <p>
+              S/. <%= asd.precio_venta%>
+            </p>
+          <% }})%>
+        </p>
+
+      </div>
+      <div>
+        <img src="img/molitalia.png" alt="" />
+        <h3>MOLITALIA</h3>
+        <p>
+          Descripción: REUNIENDO A LA FAMILIA
+        <p>
+          Disponibilidad: <!-- AQUÍ ESPECIFICAR CUÁNTAS UNIDADES DE ESTE ITEM ESTÁN DISPONIBLES -->
+          <% pr.forEach(asd=>{ %>
+            <%if(asd._id == "PM20E"){%>
+            <p>
+              <%= asd.stock_disp %>
+            </p>
+          <% }})%>
+        </p>
+        <p>
+          Precio: <!-- PRECIO DISPONIBLE -->
+          <% pr.forEach(asd=>{ %>
+            <%if(asd._id == "PM20E"){%>
+            <p>
+              S/. <%= asd.precio_venta%>
+            </p>
+          <% }})%>
+        </p>
+
+      </div>
+    </div>
+
+    <!-- FOLLOWUS -->
+    <section class="social">
+      <p>SÍGUENOS</p>
+      <div class="links">
+        <a href="https://facebook.com">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://pe.linkedin.com">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="footer-links">
+    <div class="footer-container">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/AlfredBrienoVentura">
+            <h3>ALFRED BRICEÑO VENTURA</h3>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/dav.leyva99">
+            <h3>LEYVA ARGOMEDO DAVIS JOEL</h3>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/yasmin.solanorodriguez">
+            <h3>SOLANO RODRIGUEZ YASMIN MARILÚ</h3>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100008300831206">
+            <h3>VARGAS QUIROZ JAMES ANDERSON JOSÉ</h3>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/fredybryan.venturayaipen">
+            <h3>VENTURA YAIPEN FREDY BRYAN</h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3>Copyright© MECATRÓNICA UNT 2020</h3>
+  </footer>
+
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
